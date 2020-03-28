@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   render() {
-    // debugger;
+    debugger;
     return (
       <div className="App">
           <button onClick={() => this.handleOnClickItems()}>
@@ -33,9 +33,15 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  debugger;
-  return { items: state.items }
-}
+// const mapStateToProps = (state) => {
+//   debugger;
+//   return { items: state.items }
+// }
 
+// export default connect(mapStateToProps)(App);
+
+const mapStateToProps = (state) => {
+  return { orangePeel: ["dis", "is", 'HARD']}
+}
+ 
 export default connect(mapStateToProps)(App);
